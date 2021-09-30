@@ -1,0 +1,140 @@
+
+
+#SkillBox {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    width: 95%;
+    height: auto;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+}
+.SkillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+}
+
+#Skill-HTML {
+    width: 100%;
+    animation: Animate-HTML 4s;
+    height: 50px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}#Skill-CSS {
+    animation: Animate-CSS 5s;
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    background-color: #55a69f;
+}
+
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%
+	}
+}
+
+#Skill-JS {
+    animation: Animate-JS 4s;
+    width: 65%;
+    height: 50px;
+    position: absolute;
+    background-color: #c44e45;
+}
+
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%
+	}
+}#Skill-photo {
+    animation: Animate-photo 4s;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    background-color: #5aa669;
+}
+
+@keyframes Animate-photo {
+    from {
+    width: 10px;
+}
+
+to {
+    width: 100%
+	}
+}#Skill-JAVA {
+    animation: Animate-JAVA 4s;
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    background-color: #8e930c;
+}
+
+@keyframes Animate-JAVA {
+    from {
+    width: 10px;
+}
+
+to {
+    width: 90%
+	}
+
+}#Skill-SQL {
+    animation: Animate-SQL 4s;
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    background-color: #23b1db;
+}
+
+@keyframes Animate-SQL {
+
+    from {
+    width: 10px;
+}
+
+to {
+    width: 80%
+	}
+
+.Skill-Area {
+    z-index: 1;
+    float: left;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}

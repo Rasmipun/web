@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+	<style>
+	   .contact{
+			min-height:100vh;
+			background-image:url("IMG/g.jpg");
+			background-size:cover;
+			background-position:center;
+			padding:15px;
+		}
+		.Form {
+		  border-radius: 5px;
+		  padding: 10px;
+		  margin-left: 25%;
+		  width: 50%;
+		  opacity: 0.9;
+		  background-image: url("IMG/f.jpg");
+		  background-size:contain;
+		  box-sizing: border-box;
+		  border-radius: 8px;
+		  text-align: left;
+		  box-shadow: 0 0 100px #b0256a;
+		}
+		.box{
+			width:100%;
+			background: #DA969A;/*Backgroud of naming box*/
+			box-sizing: border-box;
+			border: 1px solid #c2bba9;
+			position: static;
+			color: #ffffff; /*Color of inputing text*/
+			margin: 8px 0;
+			padding: 12px 18px;
+			border-radius: 10px;
+		}
+		.box:hover{
+		border-color: purple;
+		}
+		form .controlsubmit{
+			background-color:#b0256a;
+			border-radius: 8px;
+			color: #000000;
+			font-size: 20px;
+			letter-spacing: 5px;
+			border: 1px solid #c2bba9;
+			border-color: #b0256a;
+			margin-top: 20px;
+			transition: 1s ease;
+		}
+		form .controlsubmit:hover{
+			background-color: #90ee90;
+			cursor: pointer;
+		}
+		button{
+			
+			width: 100%;
+		}
+	/* Fixed/sticky icon bar (vertically aligned 35% from the top of the screen) */
+	.icon-bar {
+	  position: fixed;
+	  top: 35%;
+		margin-left: 80%;
+
+	}
+
+	/* Style the icon bar links */
+	.icon-bar a {
+	  display:block;
+	  transition: all 0.3s ease;
+	  color: white;
+		width: 50px;
+		border-radius: 50%;
+			text-align: center;
+	}
+
+
+	.icon-bar a:hover {
+		        opacity: 0.7;
+	  background-color: purple;
+	}
+	</style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+	<div class="container">
+	 <div class="row">
+	  <div class="brand-name">
+		<img title="Ravi's logo"src="Img/weblogo.png" alt="logo" width="50" height="50">
+	  </div>
+	  <div class="navbar">
+		<ul>
+			<li><a href="home.html" >Home</a></li>
+			<li><a href="CV.html">CV</a></li>
+			<li><a href="blog.html">blog</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="contact.html"  class="active">Contact</a></li>
+		</ul>
+	  </div>
+	 </div>
+	</div>
+  </header>
+
+	<section class="contact">
+		<div class="container">
+			<div style="margin-top:100px;text-align:center;">
+				<h1 style="color:#ffffff;">Contact Me</h1>
+        <img src="IMG/d.jpg" alt="message icon" width="50" height="50">
+			</div>
+
+		</div>
+
+    <div class=" Form">
+
+		<form onsubmit="validateForm();" name="messageForm">
+				<h2>If you want to hire me or have more inquery Please fill the form.</h2><br><br>
+				<label for ="name"><b>Name</b></label>
+				<input type="text" class="box" placeholder="Enter Name" name="name"><br><br>
+
+				<label for="country"><b>Country</b></label>
+				<input type="text" name="country" class="box" placeholder="Enter country name"><br><br>
+
+			  <label for="address"><b>Address</b></label>
+				<input type="text" name="address" class="box" placeholder="Enter Address"><br><br>
+
+			  <label for="Email"><b>Email</b></label>
+				<input type="email" name="email" class="box" placeholder="Enter Email"><br><br>
+
+			  <label for="gender"><b>Gender</b></label>
+				<input type="radio" name="gender" value="male" style="margin-left:27px;" checked>male
+			  <input type="radio" name="gender" value="female">Female
+			  <input type="radio" name="gender" value="other" >other<br><br/>
+
+			  <label for="message"><b>Message</b></label><br><br>
+			  <textarea name="message" class="box" placeholder="Type your message here" style="height:200px;width:500px"></textarea>
+			  <button type="submit" name="submit" class="controlsubmit" value="send">Submit<br><br>
+		</form>
+		<script src="script.js">
+		</script>
+    </div>
+			<!-- The social media icon bar -->
+		<div class="icon-bar">
+			<a href="https://www.facebook.com/rv.poon"> <img src="fb.jpg" alt="facebook" width="50" height="50" style="border-radius:50%"> </a>
+			<a href="https://gmail.com"> <img src="gmail.jpg" alt="gmail" width="50" height="50" style="border-radius:50%"></a>
+			<a href="https://www.instagram.com/rvpoon"><img src="insta.png" alt="instagram" width="50" height="50" style="border-radius:50%" ></a>
+			<a href="https://www.snapchat.com/l/en-gb/"><img src="snap.jpg" alt="snapchat" width="50" height="50" style="border-radius:50%"></a>
+
+		</div>
+
+   </section>
+
+
+
+  <footer>
+     <div class="footerContent" style="color:#ffffff;">
+			 		
+			    <p align="right">© 2020 Ravi Pun</p>
+			    <p align="right">All Rights Reserved</p>
+
+
+  </div>
+  </footer>
+
+
+
+  </body>
+</html>
